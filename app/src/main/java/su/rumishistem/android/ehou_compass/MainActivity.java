@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 
 		//今年の西暦を取得
-		int YEAR = 2024;
+		int YEAR = 0;
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-			//YEAR = Year.now().getValue();
+			YEAR = Year.now().getValue();
 
 			System.out.println("今年は" + YEAR + "年だ！");
 		} else {
